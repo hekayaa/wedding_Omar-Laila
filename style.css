@@ -134,7 +134,7 @@ body {
   margin: 40px auto;
   padding: 50px 25px;
   background: var(--card-bg);
-  border: 1.5px solid #000; /* ✅ تم تغيير لون الفريم إلى الأسود */
+  border: 1.5px solid #000; /* ✅ الفريم أسود كما طلبت */
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
@@ -142,10 +142,25 @@ body {
 
 /* ========== Couple Section ========== */
 .top-quote {
+  /* ✅ نفس ستايل Omar & Laila بالظبط */
+  font-family: var(--font-script);
+  font-size: 2.3rem;
+  color: var(--text-main);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-shadow: 0 0 1px rgba(74, 68, 60, 0.15);
+}
+
+/* ✅ ستايل السطر التاني "had no idea..." زي ما كان */
+.quote-sub {
+  font-family: var(--font-serif);
   font-style: italic;
   font-size: 1.1rem;
+  font-weight: 300;
   color: var(--text-light);
-  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 /* ✅ إخفاء التصميم القديم */
@@ -674,9 +689,11 @@ input:focus {
   }
 
   .top-quote {
-    font-style: italic;
-    font-size: 1.1rem;
-    color: var(--text-light);
+    font-size: 2.2rem;
+  }
+
+  .quote-sub {
+    font-size: 1rem;
   }
 
   .timeline::before {
