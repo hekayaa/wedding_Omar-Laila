@@ -134,7 +134,7 @@ body {
   margin: 40px auto;
   padding: 50px 25px;
   background: var(--card-bg);
-  border: 1.5px solid #000; /* ✅ الفريم أسود كما طلبت */
+  border: 1.5px solid #000;
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
@@ -142,9 +142,8 @@ body {
 
 /* ========== Couple Section ========== */
 .top-quote {
-  /* ✅ نفس ستايل Omar & Laila بالظبط */
   font-family: var(--font-script);
-  font-size: 2.3rem;
+  font-size: 2.8rem;
   color: var(--text-main);
   font-weight: 500;
   font-style: normal;
@@ -153,7 +152,6 @@ body {
   text-shadow: 0 0 1px rgba(74, 68, 60, 0.15);
 }
 
-/* ✅ ستايل السطر التاني "had no idea..." زي ما كان */
 .quote-sub {
   font-family: var(--font-serif);
   font-style: italic;
@@ -684,6 +682,13 @@ input:focus {
 }
 
 @media (max-width: 500px) {
+  /* ✅ تصغير البروايز في الموبايل عشان النصوص تبان أوضح */
+  .section {
+    padding: 35px 20px; /* ✅ تقليل الحشو الداخلي */
+    margin: 25px 12px; /* ✅ تقليل الهوامش الخارجية */
+    border-radius: 200px 12px 180px 12px / 12px 180px 12px 200px; /* ✅ تعديل بسيط في انحناءات الحواف */
+  }
+
   .cursive-title {
     font-size: 2.6rem;
   }
