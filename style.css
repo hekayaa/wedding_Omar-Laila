@@ -134,13 +134,13 @@ body {
   margin: 40px auto;
   padding: 50px 25px;
   background: var(--card-bg);
-  border: 1.5px solid var(--border);
+  border: 1.5px solid #000; /* ✅ تم تغيير لون الفريم إلى الأسود */
   border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
-/* ========== Couple Section - NEW ========== */
+/* ========== Couple Section ========== */
 .top-quote {
   font-style: italic;
   font-size: 1.1rem;
@@ -673,6 +673,12 @@ input:focus {
     font-size: 2.6rem;
   }
 
+  .top-quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--text-light);
+  }
+
   .timeline::before {
     left: 20px;
   }
@@ -695,7 +701,6 @@ input:focus {
     max-width: 120px;
   }
 
-  /* ✅ Responsive للصورة الجديدة */
   .transparent-couple-img {
     max-width: 220px;
     width: 85%;
